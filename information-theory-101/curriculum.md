@@ -2,13 +2,18 @@
 
 ## Course Overview
 
-This curriculum is designed for students in the **Montgomery Blair High School (MBHS) Magnet Program**. It leverages their background in calculus and linear algebra to present information theory as a unifying "meta-language" for science, using a discrete/algebraic approach.
+This curriculum presents information theory as a unifying "meta-language" for science, using a discrete/algebraic approach accessible to advanced high school students. It is designed for students with a strong mathematical background who are ready to explore fundamental questions about how complexity simplifies, how information flows, and how patterns emerge across diverse domains.
 
 **Course Title:** Information Theory: How to Count the World
 
-**Prerequisites:** Applied Statistics (concurrent or prior)
+**Prerequisites:** 
+- Calculus (concurrent or prior)
+- Linear Algebra (concurrent or prior) 
+- Statistics or Probability (concurrent or prior)
 
-**Level:** Advanced Magnet Elective
+**Level:** Advanced High School Elective / Honors Course
+
+**Course Duration:** Full year (36 weeks)
 
 ---
 
@@ -78,11 +83,11 @@ This curriculum is designed for students in the **Montgomery Blair High School (
 
 ### Topics
 
-- **Two-Part Encoding** Introducing the idea that any data can be described as "Model Description + Residual Error." The model captures the regularities (the "universal" structure), while the error captures what's left over (the "particular" deviations). When you have enough data, this two-part structure becomes the best possible: you can't do better than describing the model and then encoding the residuals.
+- **Two-Part Encoding:** Introducing the idea that any data can be described as "Model Description + Residual Error." The model captures the regularities (the "universal" structure), while the error captures what's left over (the "particular" deviations). When you have enough data, this two-part structure becomes the best possible: you can't do better than describing the model and then encoding the residuals.
 
-- **The Central Limit Theorem as a Two-Part Description:** Exploring how the CLT shows that when you have many samples, any distribution (regardless of its complexity) simplifies to a Gaussian, which is completely characterized by just two numbers: the mean (average) and variance (spread). All the other details about the distribution become irrelevant when you have enough data. This is a profound simplification: infinite complexity → two numbers. Using the AEP (from Unit 3) to understand why this happens: the typical set concentrates around the mean with a spread given by the variance. 
-- - **Pedagogical note:** This flips the perspective from Unit 3: there we viewed AEP as a discrete CLT (information theory through probability theory's lens). Here we view CLT as a two-part encoding (probability theory through information theory's lens). This back-and-forth reveals the same deep structure from complementary angles, showing how the same mathematical pattern appears whether we're thinking about the concentration of probability (CLT) or the encoding structure revealed by entropy (AEP).
-- - **Pedagogical note:** The "two numbers" (mean, variance) themselves need encoding—we're describing the asymptotic structure where the model description becomes relatively small compared to the data. In the discrete case, we can be concrete about this; the rigorous continuous case involves differential entropy and gets very technical.
+- **The Central Limit Theorem as a Two-Part Description:** Exploring how the CLT shows that when you have many samples, any distribution (regardless of its complexity) simplifies to a Gaussian, which is completely characterized by just two numbers: the mean (average) and variance (spread). All the other details about the distribution become irrelevant when you have enough data. This is a profound simplification: infinite complexity → two numbers. Using the AEP (from Unit 3) to understand why this happens: the typical set concentrates around the mean with a spread given by the variance.
+  - **Pedagogical note:** This flips the perspective from Unit 3: there we viewed AEP as a discrete CLT (information theory through probability theory's lens). Here we view CLT as a two-part encoding (probability theory through information theory's lens). This back-and-forth reveals the same deep structure from complementary angles, showing how the same mathematical pattern appears whether we're thinking about the concentration of probability (CLT) or the encoding structure revealed by entropy (AEP).
+  - **Pedagogical note:** The "two numbers" (mean, variance) themselves need encoding—we're describing the asymptotic structure where the model description becomes relatively small compared to the data. In the discrete case, we can be concrete about this; the rigorous continuous case involves differential entropy and gets very technical.
 
 - **When Two Parts are Not Enough: Higher-Order Encodings:** Recognizing that the reduction to two numbers (mean and variance) and two-part encoding (model + error) are only the leading terms. When we have smaller datasets, care about convergence rates, need more precision, or have limited resources, we need higher-order terms. Just as we can refine a model by adding corrections (model + first-order error + second-order error + ...), we can refine our encoding structure. These higher-order terms correspond to higher-order entropies (conditional entropies of higher order, capturing dependencies beyond the simple model). This mirrors how distributions have more detailed statistics beyond mean and variance: the third statistic (skewness) captures asymmetry, the fourth statistic (kurtosis) captures tail behavior, and so on. The two-part/two-number structure is the main term of a deeper expansion that includes corrections. This completes the deep connection: just as physical systems have a full expansion (mean + variance + skewness + kurtosis + ...), information systems have (model + first-order error + second-order error + ...). The same mathematical structure governs both how physical systems simplify (reduction to statistics) and how information systems compress (encoding structure). When we need perfect reconstruction, we need all the statistics (all moments). As we allow approximations or have limited resources, we can use fewer bits, and the higher-order terms become less important. 
 
@@ -90,10 +95,10 @@ This curriculum is designed for students in the **Montgomery Blair High School (
 
 ---
 
-## Implementation Notes for MBHS
+## Implementation Notes
 
-- **Finitary Approach:** All concepts are introduced via discrete sums and combinatorics to keep the focus on the "logarithm of probability" rather than integral calculus.
+- **Finitary Approach:** All concepts are introduced via discrete sums and combinatorics to keep the focus on the "logarithm of probability" rather than integral calculus. This makes the material accessible to advanced high school students while maintaining mathematical rigor.
 
-- **Computation:** Students use Google Colab or Python to simulate Huffman trees and calculate the entropy of natural languages vs. code.
+- **Computation:** Students use computational tools (Google Colab, Python, or similar) to simulate Huffman trees, calculate entropy of natural languages vs. code, and explore information-theoretic concepts through hands-on computation.
 
 - **Synthesis:** The course concludes by showing that the **CLT** and **AEP** are two sides of the same "Concentration of Measure" coin—one describes the limits of physical noise, the other the limits of human (and biological) communication. A key pedagogical insight throughout the course is the back-and-forth between these perspectives: viewing AEP as a discrete CLT (Unit 3) and then viewing CLT as a two-part encoding (Unit 4) reveals the same deep structure from complementary angles. This perspective-flipping demonstrates how information theory serves as a unifying meta-language: the same mathematical patterns (quantified by entropy and related measures) appear whether we're thinking about probability distributions, sequences of symbols, or the structure of knowledge itself.
