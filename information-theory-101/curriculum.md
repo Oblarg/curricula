@@ -2,14 +2,15 @@
 
 ## Course Overview
 
-This curriculum presents information theory as a unifying "meta-language" for science, using a discrete/algebraic approach accessible to advanced high school students. It is designed for students with a strong mathematical background who are ready to explore fundamental questions about how complexity simplifies, how information flows, and how patterns emerge across diverse domains.
+This curriculum presents information theory as a unifying "meta-language" for science, using a discrete/combinatorial approach together with geometric intuition accessible to advanced high school students. It is designed for students with a strong mathematical background who are ready to explore fundamental questions about how complexity simplifies, how information flows, and how patterns emerge across diverse domains.
+
+This curriculum does not assume familiarity with calculus or linear algebra.  Connections to these topics are made in the various "perspective" sections, and concepts that are necessary for understanding of the core ideas are introduced as needed (without deep technical development).  Familiarity with probability is required; the timing of the course is intended to allow simultaneous study with statistics, which will typically introduce the required notions of probability early in the year.
 
 **Course Title:** Information Theory: How to Count the World
 
 **Prerequisites:** 
-- Calculus (concurrent or prior)
-- Linear Algebra (concurrent or prior) 
 - Statistics or Probability (concurrent or prior)
+ - **note:** The first half of Unit 1 is intended to be accessible to students with no prior exposure to probability, but the ideas develop at a rapid pace under the assumption that probability is being simultaneously/independently studied.  If a statistics course does *not* introduce probability early in the year, then it is not a suitable concurrent-prerequisite.
 
 **Level:** Advanced High School Elective / Honors Course
 
