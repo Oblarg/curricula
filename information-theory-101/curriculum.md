@@ -84,7 +84,7 @@ This curriculum presents information theory as a unifying "meta-language" for sc
 
 ## Unit 4: The Universal Two-Part Description: Data Compression and Optimal Encoding
 
-**Focus:** Understanding how data compression works, how to encode data optimally, and the universal two-part description of data. This unit completes the connection between information theory and the real world by showing how the same two-part structure that simplifies physical systems (the mean and the variance) also simplifies information systems (the model and the error) and philosophical foundations (the specific and the general).
+**Focus:** Understanding how data compression works, how to encode data optimally, and the universal two-part description of data. This unit completes the connection between information theory and the real world by showing how the same two-part structure that simplifies physical systems (the mean and the variance) also simplifies information systems (the model and the error) and philosophical foundations (the general and the particular).
 
 ### Topics
 
